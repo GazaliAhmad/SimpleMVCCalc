@@ -1,15 +1,17 @@
 package com.journeyman;
 
+// The main class that runs the program. Model View Controller (MVC) concept.
+
 public class MVCCalc {
 
     public static void main(String[] args) {
-            CalcView theView = new CalcView();
+        CalcModel theModel = new CalcModel();
 
-            CalcModel theModel = new CalcModel();
+        CalcView theView = new CalcView();
 
-            CalcController theController = new CalcController(theView, theModel);
+        CalcController theController = new CalcController(theView, theModel);
 
-            theView.setVisible(true);
+        theView.setVisible(true);
         }
     }
 

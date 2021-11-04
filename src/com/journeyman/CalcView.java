@@ -1,11 +1,9 @@
 package com.journeyman;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+// The View in MVC. Its only job is to display what the users see.
+// It passes the information entered by the user to whoever needs it.
+
+import javax.swing.*;
 import java.awt.event.ActionListener;
 
 public class CalcView extends JFrame {

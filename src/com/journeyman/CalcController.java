@@ -1,12 +1,15 @@
 package com.journeyman;
 
+// The Controller in MVC.
+// Its job is to coordinate the interaction between the Model and the View.
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class CalcController {
 
-    private CalcView theView;
-    private CalcModel theModel;
+    private final CalcView theView;
+    private final CalcModel theModel;
 
     public CalcController(CalcView theView, CalcModel theModel) {
         this.theView = theView;
