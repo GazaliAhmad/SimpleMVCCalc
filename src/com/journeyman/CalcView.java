@@ -10,11 +10,10 @@ import java.awt.event.ActionListener;
 
 public class CalcView extends JFrame {
 
-    private JTextField num1 = new JTextField(10);
-    private JLabel additionLabel = new JLabel("+");
-    private JTextField num2 = new JTextField(10);
-    private JButton calcButton = new JButton("Calculate");
-    private JTextField calcSolution = new JTextField(10);
+    private final JTextField num1 = new JTextField(10);
+    private final JTextField num2 = new JTextField(10);
+    private final JButton calcButton = new JButton("Calculate");
+    private final JTextField calcSolution = new JTextField(10);
 
     CalcView() {
         JPanel calcPanel = new JPanel();
@@ -24,6 +23,7 @@ public class CalcView extends JFrame {
         this.setTitle("Calculator");
 
         calcPanel.add(num1);
+        JLabel additionLabel = new JLabel("+");
         calcPanel.add(additionLabel);
         calcPanel.add(num2);
         calcPanel.add(calcButton);
@@ -43,6 +43,7 @@ public class CalcView extends JFrame {
     public Double getCalcSolution() {
         return Double.parseDouble(calcSolution.getText());
     }
+
 
     public void setCalcSolution(Double solution) {
         calcSolution.setText(solution.toString());
