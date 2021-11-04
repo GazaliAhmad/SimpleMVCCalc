@@ -19,11 +19,9 @@ public class CalcController {
         @Override
         public void actionPerformed(ActionEvent arg0) {
 
-            Double num1, num2 = 0.0;
-
             try {
-                num1 = theView.getNum1();
-                num2 = theView.getNum2();
+                Double num1 = theView.getNum1();
+                Double num2 = theView.getNum2();
 
                 theModel.addTwoNumbers(num1, num2);
 

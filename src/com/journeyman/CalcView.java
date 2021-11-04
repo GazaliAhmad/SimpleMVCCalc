@@ -1,6 +1,11 @@
 package com.journeyman;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 
 public class CalcView extends JFrame {
@@ -15,7 +20,7 @@ public class CalcView extends JFrame {
         JPanel calcPanel = new JPanel();
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(300, 200);
+        this.setSize(500, 100);
         this.setTitle("Calculator");
 
         calcPanel.add(num1);
